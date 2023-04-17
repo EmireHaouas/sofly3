@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 48px;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 24px;
+}
+
+.grid-col {
+  /* background: red; */
+}
+
+/* HEADINGS */
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #006DA6;
+  /* text-align: center; */
+  /* color: #fff; */
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.header {
+  max-width: 1400px;
+  padding: 12px;
+  margin: 8px auto;
+}
+
+.header-box {
+  /* background: #3f87c7; */
+  padding: 8px;
+  padding-bottom: 0.4px;
+  margin-bottom: 20px;
+}
+
+.justifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  background: #437cb2;
+}
+
+h3 {
+  letter-spacing: 5px;
+}
+
+ul.leaders {
+  /* max-width: 40em; */
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . ';
+    font-weight: normal;
+}
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}
+
+.horizontal-line {
+  border: 1px solid #000;
+  margin: 12px auto;
+  width: 80%;
+  height: 1px;
+}
+
+ul li {
+  color: #1a1919;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 4px;
+}
+
+ul li span:nth-child(1) {
+    /* font-weight: 600; */
+}
+
+ul li span:nth-child(2) {
+    color: #006DA6;
+    font-family: circular;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer p.note {
+  color: #bd262b;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 16px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 748px) {
+  ul.leaders {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 748px) {
+  .container {
+    padding: 0 2px;
+
+  }
+  ul li {
+    font-size: 12px;
+  }
+}
+
